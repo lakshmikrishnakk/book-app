@@ -7,6 +7,7 @@ import AddBook from './assets/components/AddBook'
 import DeleteBook from './assets/components/DeleteBook'
 import SearchBook from './assets/components/SearchBook'
 import ViewBookCart from './assets/components/ViewBookCart'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 
 function App() {
@@ -14,10 +15,15 @@ function App() {
 
   return (
     <>
-      <AddBook />
-      <DeleteBook />
-      <SearchBook />
-      <ViewBookCart/>
+     <BrowserRouter>
+     <Routes>
+      <Route path='/' element={<AddBook/>}/>
+      <Route path='/delete' element={<DeleteBook/>}/>
+      <Route path='/search' element={<SearchBook/>}/>
+      <Route path='/viewbook' element={<ViewBookCart/>}/>
+     </Routes>
+     
+     </BrowserRouter>
     </>
   )
 }
