@@ -6,6 +6,8 @@ import './App.css'
 import AddBook from './assets/components/AddBook'
 import DeleteBook from './assets/components/DeleteBook'
 import SearchBook from './assets/components/SearchBook'
+import ViewBookCart from './assets/components/ViewBookCart'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +17,7 @@ function App() {
       <AddBook />
       <DeleteBook />
       <SearchBook />
+      <ViewBookCart/>
     </>
   )
 }
