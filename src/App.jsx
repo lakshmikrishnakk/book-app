@@ -4,6 +4,8 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import AddBook from './assets/components/AddBook'
+import DeleteBook from './assets/components/DeleteBook'
+import SearchBook from './assets/components/SearchBook'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +13,8 @@ function App() {
   return (
     <>
       <AddBook />
+      <DeleteBook />
+      <SearchBook />
     </>
   )
 }
